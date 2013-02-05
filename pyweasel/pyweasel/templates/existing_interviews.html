@@ -1,0 +1,30 @@
+<html>
+	<head><title> Existing interview questions</title></head>
+	<body>
+		<p> Welcome to the weasel system. We couldn't find a better name. </p>
+		<p>
+		Choose (or create) a question set.
+		</p>
+		
+		<p>
+		{%for question_set in question_sets %}
+			<a href="/interview/{{question_set}}">
+				{{question_set}}
+			</a>
+			<br/>
+		{%endfor%}
+		</p>
+
+		<p>
+
+			<input type = "button" onclick="create()" value="Create another question set"/>
+		</p>
+	</body>
+	
+	<script type="text/javascript">
+		function create(){
+			alert('No question set creation yet');
+		}
+	</script>
+
+</html>
