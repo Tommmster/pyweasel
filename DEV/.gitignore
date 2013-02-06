@@ -1,0 +1,6 @@
+# Ignore virtual env usr/ bin/ local/ include/ directories
+
+usr/
+bin/
+local/
+include/
